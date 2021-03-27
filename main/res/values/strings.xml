@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Android List Business</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Bem Vindo !"</string>
+    <string name="invalid_username">O Nome De Usuário Não é Válido</string>
+    <string name="invalid_password">A Senha Deve Ter No Minimo 6 Caracteres</string>
+    <string name="login_failed">"Falha Ao Fazer Login "</string>
+    <string name="title_activity_second">MainActivity</string>
+    <string name="title_home">Novo Produto</string>
+    <string name="title_dashboard">Produtos  Existentes </string>
+    <string name="title_notifications">Notificações</string>
+</resources>

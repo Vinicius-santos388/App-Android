@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/Visualizador"
+        android:layout_width="367dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="560dp"
+        android:onClick="BtAdd"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/NomeProd"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome Do Produto"
+            android:inputType="textPersonName"
+            android:maxLength="25"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/QtdProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Quantidade"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textAlignment="center" />
+
+        <CheckBox
+            android:id="@+id/Prc"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:text="Perecível"
+            android:textAlignment="viewStart"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/BtSalvar"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:width="60px"
+            android:text="Salvar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="367dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="188dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/BtAdd"
+        android:layout_width="60dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="320dp"
+        android:clickable="true"
+        android:onClick="Visualizador"
+        android:src="@android:drawable/ic_input_add"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
